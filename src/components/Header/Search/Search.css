@@ -1,0 +1,86 @@
+/* Style for the search input container */
+.search_input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search_input input {
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    width: 100%;
+    transition: border 0.3s ease;
+}
+
+.search_input input:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+/* Style for each search result row */
+.search_row2 {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search_row2:hover {
+    background-color: #eef2f7;
+}
+
+/* Style for the image inside each search result */
+.search_row2_col1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.search_row2_col1 img:hover {
+    transform: scale(1.05);
+}
+
+/* Style for the search result text */
+.search_row2_col1 h5 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.search_row2_col1 h6 {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Center align the modal content */
+.modal-dialog.modal-fullscreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjust search input width on smaller screens */
+@media (max-width: 768px) {
+    .search_input input {
+        font-size: 16px;
+        height: 45px;
+        padding: 8px 15px;
+    }
+    
+    .search_row2_col1 h5 {
+        font-size: 18px;
+    }
+
+    .search_row2_col1 h6 {
+        font-size: 14px;
+    }
+}
